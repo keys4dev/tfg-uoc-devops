@@ -1,0 +1,25 @@
+---
+- name: Windows Feature
+  hosts: win-servers
+  gather_facts: true
+
+  tasks:
+    - name: Disable Windows Updates Service
+      win_service:
+        name: wuauserv
+        state: stopped
+        enabled: false
+
+    - name: Run ipconfig and return IP address information.
+      raw: ipconfig
+      register: ipconfig
+    - debug: var=ipconfig
+
+# Install and enable IIS on Windows server 2019
+    - name: Install IIS
+      win_feature:
+        name: "Web-Server"
+        state: present
+        restart: yes
+        include_sub_features: yes
+        include_management_tools: yes

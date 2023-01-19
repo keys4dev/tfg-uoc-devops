@@ -1,0 +1,22 @@
+---
+- name: Install Hosting Bundle 6.0.12
+  hosts: win-servers
+ 
+  tasks:
+    - name: Install Hosting Bundle 6.0.12
+      win_package:
+        path: https://download.visualstudio.microsoft.com/download/pr/cab723a6-dc1f-4b3a-8675-34dc84a21306/1ee69c32da9ba78d80d65f9c067c4f68/dotnet-hosting-6.0.12-win.exe
+        product_id: '{cab723a6-dc1f-4b3a-8675-34dc84a21306}'
+        arguments:
+        - /quiet
+        - /install
+        - /norestart
+
+    - name: Install Hosting Bundle 7.0.1
+      win_package:
+        path: https://download.visualstudio.microsoft.com/download/pr/352e02d2-66be-48d5-b9bf-959a9a02982d/e29621ccbdb41d69b06bb29b4434b13a/dotnet-hosting-7.0.1-win.exe
+        product_id: '{352e02d2-66be-48d5-b9bf-959a9a02982d}'
+        arguments:
+        - /quiet
+        - /install
+        - /norestart

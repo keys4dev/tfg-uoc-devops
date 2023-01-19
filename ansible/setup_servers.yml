@@ -1,0 +1,34 @@
+---
+- name: Windows Feature
+  hosts: win-servers
+  gather_facts: true
+
+  tasks:
+    - name: Disable Windows Updates Service
+      win_service:
+        name: wuauserv
+        state: stopped
+        enabled: false
+
+    - name: Run ipconfig and return IP address information.
+      raw: ipconfig
+      register: ipconfig
+    - debug: var=ipconfig
+
+# Install and enable IIS on Windows server 2019
+    - name: Install IIS
+      win_feature:
+        name: "Web-Server"
+        state: present
+        restart: yes
+        include_sub_features: yes
+        include_management_tools: yes
+# Install Hosting Bundle    
+    - name: Install Hosting Bundle 6.0.12
+      win_package:
+        path: https://download.visualstudio.microsoft.com/download/pr/cab723a6-dc1f-4b3a-8675-34dc84a21306/1ee69c32da9ba78d80d65f9c067c4f68/dotnet-hosting-6.0.12-win.exe
+        product_id: '{cab723a6-dc1f-4b3a-8675-34dc84a21306}'
+        arguments:
+        - /quiet
+        - /install
+        - /norestart
