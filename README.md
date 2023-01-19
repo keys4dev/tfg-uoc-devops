@@ -13,7 +13,7 @@
 
 # Treball Fi Grau UOC - Metodologia Devops
 ## Repositori del projecte de fi de grau Metodologia Devops
- * Aqui trobaras tot el necessari per reporoduir aquest l'entorn del treball
+ * Aqui trobaras tot el necessari per reporoduir l'entorn del treball
  
 ## Informacio
 
