@@ -13,16 +13,19 @@
 
 # Treball Fi Grau UOC - Metodologia Devops
 ## Repositori del projecte de fi de grau Metodologia Devops
- * Aqui trobaras tot el necessari per reporoduir l'entorn del treball
+ * Aquí trobaràs tot el necessari per reproduir l'entorn del treball
  
-## Informacio
+## Informació
 
-* La infraestructura s'ha dissenyat amb instancies EC2 d'AWS.
-* Les pipelines de CI/CD es gestionen desde Azure Devops.
-* Per crear noves instancies per els servidors on es deplega el codi s'utilitza Terraform.
-* Per configurar els requisits dels servidors QA/STG/PROD s'utilitza Ansible.
+La infraestructura amb les eines de gestió de la metodologia DevOps és la següent:
+
+* 1 Instància amb Ansible i Terraform
+* 1 Instància amb Sonarqube
+* 1 Instància amb Prometheus
+* 1 Instància amb Grafana
 
 ## AWS
+
  La infraestructura amb les eines de gestio de la metodologia DevOps es la seguent:
  * 1 Instancia amb Ansible i Terraform
  * 1 Instancia amb Sonarqube
@@ -31,9 +34,9 @@
 
 ## Azure Devops
 
-* A azure devops hi ha el repositori tfgUoc.git. El codi font es pot trobar aqui:  [`CODI FONT`](./codi-prova)
-* Per clonar el codi a dins de Azure Devops Repos [![Azure Devops](https://img.shields.io/badge/-Azure%20Devops-grey?style=flat-square&logo=azuredevops)](https://dev.azure.com/) pots clonar amb aquest enllac https://github.com/keys4dev/tfgUoc.git
-* Per clonar al teu ordinador local necessites installar git [![Git](https://img.shields.io/badge/-git-grey?style=flat-square&logo=git)](https://git-scm.com/) , despres el pots clonar amb la comanda:
+* A Azure Devops hi ha el repositori tfgUoc.git. El codi font es pot trobar aquí:  [`CODI FONT`](./codi-prova)
+* Per clonar el codi a dins de Azure Devops Repos [![Azure Devops](https://img.shields.io/badge/-Azure%20Devops-grey?style=flat-square&logo=azuredevops)](https://dev.azure.com/) pots clonar amb aquest enllaç https://github.com/keys4dev/tfgUoc.git
+* Per clonar al teu ordinador local necessites instal·lar git [![Git](https://img.shields.io/badge/-git-grey?style=flat-square&logo=git)](https://git-scm.com/) , , després el pots clonar amb la comanda:
 ```bash
 git clone https://github.com/keys4dev/tfgUoc.git
 ```
