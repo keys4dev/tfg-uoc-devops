@@ -32,7 +32,7 @@
 ## Azure Devops
 
 * A azure devops hi ha el repositori tfgUoc.git. El codi font es pot trobar aqui:  [`CODI FONT`](./codi-prova)
-* Per clonar el codi a dins de Azure Devops Repos pots clonar amb aquest enllac https://github.com/keys4dev/tfgUoc.git
+* Per clonar el codi a dins de Azure Devops Repos [![Azure Devops](https://img.shields.io/badge/-Azure%20Devops-grey?style=flat-square&logo=azuredevops)](https://dev.azure.com/) pots clonar amb aquest enllac https://github.com/keys4dev/tfgUoc.git
 * Per clonar al teu ordinador local necessites installar git [![Git](https://img.shields.io/badge/-git-grey?style=flat-square&logo=git)](https://git-scm.com/) , despres el pots clonar amb la comanda:
 ```bash
 git clone https://github.com/keys4dev/tfgUoc.git
