@@ -1,6 +1,6 @@
 ![https://github.com/keys4dev/tfg-uoc-devops/blob/main/assets/banner.jpg?raw=true](./assets/banner.jpg)
 
- [!https://badgen.net/badge/icon/terraform?icon=terraform&label](https://www.terraform.io/)
+ ![https://badgen.net/badge/icon/terraform?icon=terraform&label](https://www.terraform.io/)
 
 # Treball Fi Grau UOC - Metodologia Devops
 ## Repositori del projecte de fi de grau Metodologia Devops
