@@ -14,15 +14,6 @@
 # Treball Fi de Grau UOC - Metodologia Devops
 ## Repositori del projecte de fi de grau Metodologia Devops
  * Aquí trobaràs tot el necessari per reproduir l'entorn del treball
- 
-## Informació
-
-La infraestructura amb les eines de gestió de la metodologia DevOps és la següent:
-
-* 1 Instància amb Ansible i Terraform
-* 1 Instància amb Sonarqube
-* 1 Instància amb Prometheus
-* 1 Instància amb Grafana
 
 ## AWS
 
