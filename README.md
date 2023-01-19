@@ -39,14 +39,16 @@ git clone https://github.com/keys4dev/tfgUoc.git
 ```
 
 ## Ansible
-
+```bash
 ansible-playbook setup_servers.yml
 sudo nano Install_Hosting_Bundle.yml
-
+```
 ## Terraform
 
+```bash
 terraform init
 terraform commit
 terraform plan
 terraform apply
+```
 
