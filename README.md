@@ -19,7 +19,7 @@
 
 ## Azure Devops
 
-A azure devops hi ha el repositori tfgUoc.git. El codi font es pot trobar aqui:  [`CODI FONT`](./codi-prova/)
+A azure devops hi ha el repositori tfgUoc.git. El codi font es pot trobar aqui:  [`CODI FONT`](./codi-prova)
 
 ## Ansible
 
