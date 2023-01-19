@@ -6,9 +6,9 @@
 [![Terraform](https://img.shields.io/badge/-Terraform-blue?style=flat-square&logo=terraform)](https://www.terraform.io/) 
 [![Azure Devops](https://img.shields.io/badge/-Azure%20Devops-blue?style=flat-square&logo=azuredevops)](https://dev.azure.com/)
 [![Amazon Aws](https://img.shields.io/badge/-Amazon%20Aws-blue?style=flat-square&logo=amazonaws)](https://aws.amazon.com/) 
-[![Azure Devops](https://badgen.net/badge/icon/azurepipelines?icon=azurepipelines&label)](https://dev.azure.com/)
-[![Terraform](https://badgen.net/badge/icon/terraform?icon=terraform&label)](https://www.terraform.io/) 
-[![Azure Devops](https://badgen.net/badge/icon/azurepipelines?icon=azurepipelines&label)](https://dev.azure.com/)
+[![Sonarqube](https://img.shields.io/badge/-Sonarqube-grey?style=flat-square&logo=sonarqube)](https://www.sonarsource.com/products/sonarqube/)
+[![Prometheus](https://img.shields.io/badge/-Prometheus-blue?style=flat-square&logo=prometheus)](https://prometheus.io/) 
+[![Grafana](https://img.shields.io/badge/-grafana-blue?style=flat-square&logo=grafana)](https://grafana.com/)
 
 
 
