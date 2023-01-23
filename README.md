@@ -15,7 +15,7 @@
 ## Repositori del projecte de fi de grau Metodologia Devops
  * Aquí trobaràs tot el necessari per reproduir l'entorn del treball
 
-### AWS
+## AWS
 
  La infraestructura amb les eines de gestio de la metodologia DevOps es la seguent:
  * 1 Instancia amb Ansible i Terraform a partir de la AMI -> ubuntu/images/hvm-ssd/ubuntu-bionic-18.04-amd64-server-20221201. 
@@ -23,13 +23,13 @@
  * 1 Instancia amb Prometheus a partir de la AMI -> ubuntu/images/hvm-ssd/ubuntu-bionic-18.04-amd64-server-20221201. 
  * 1 Instancia amb Grafana a partir de la AMI -> ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-20221201. 
 
-## IPs de Xarxa per Maquina
+### IPs de Xarxa per Maquina
 * Ansible-Terraform  172.31.41.229. 
 * Sonarqube          172.31.42.145. 
 * Prometheus         172.31.46.105. 
 * Grafana            172.31.36.121. 
 
-## Configuració d'una AMI personalitzada per després desplegar-les amb Terraform
+### Configuració d'una AMI personalitzada per després desplegar-les amb Terraform
 Per la configuració dels servidors Web.    
 Primer s'ha de creaar una instancia manualment a partir de la AMI ->
 Instal·la el següent:
@@ -112,6 +112,7 @@ sudo systemctl enable --now grafana-server
 ```
 
 ## Prometheus
+Instal·la Prometheus amb aquestes comandes:
 ```bash
 wget https://s3-eu-west-1.amazonaws.com/deb.robustperception.io/41EFC99D.gpg | sudo apt-key add -
 sudo apt-get update -y
