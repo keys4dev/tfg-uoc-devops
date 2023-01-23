@@ -43,6 +43,7 @@ Posteriorment ja es pot eliminar la instacia per posteriorment crear les instanc
 ## Azure Devops
 
 Has de crear un usuari aqui: https://dev.azure.com
+* Crear un nou projecte
 
 * A Azure Devops hi ha el repositori tfgUoc.git. El codi font es pot trobar aquí:  [`CODI FONT`](./codi-prova)
 * Per clonar el codi a dins de Azure Devops Repos [![Azure Devops](https://img.shields.io/badge/-Azure%20Devops-grey?style=flat-square&logo=azuredevops)](https://dev.azure.com/) pots clonar amb aquest enllaç https://github.com/keys4dev/tfgUoc.git
@@ -51,7 +52,8 @@ Has de crear un usuari aqui: https://dev.azure.com
 git clone https://github.com/keys4dev/tfgUoc.git
 ```
 Pots importar la pipeline de compilació d'aquest fitxer.
-
+*Per afegir els servidors web com a targets un cop els tinguis desplegats amb Terraform has d'anar a Pipelines->Deployment Groups -> Crear un nou deployment group -> Afegir un nou target -> Copiar el script que apareix i executarlo al servidor web.
+Mes informació aqui: https://learn.microsoft.com/en-us/azure/devops/pipelines/release/deployment-groups/?view=azure-devops
 ## Terraform
 Dins de la instancia ansible-terraform instal·la Terraform amb aquestes comandes:
 
