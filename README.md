@@ -35,14 +35,15 @@ Primer s'ha de creaar una instancia manualment a partir de la AMI ->
 Instal·la el següent:
 
 * Executa aquest [script](./Web-Servers-Requisites/ConfigureRemotingForAnsible.ps1) per configurar els protocolos WinRM dins del servidor. (Aixó garanteix que ansible pughi connectar a la maquina).
-* Executa aquest [script](./Web-Servers-Requisites/create_user_ansible.ps1). per crear l'usuari Ansible dins del servidor. Et demanará una password. 
+* Executa aquest [script](./Web-Servers-Requisites/create_user_ansible.ps1). per crear l'usuari Ansible dins del servidor. Et demanará una password.
+* Instala aquest [programa](.//Web-Servers-Requisites/windows_exporter-0.16.0-amd64.msi) per que exporti les metriques a Prometheus. 
 * Un cop tot instal·lat crea una AMI a partir de la Instancia. El nom que et generi aquesta nova AMI l'has de configurar en aquest fitxer de terraform.
 
 Posteriorment ja es pot eliminar la instacia per posteriorment crear les instancies quan es necessitin en amb Terraform.
 
 ## Sonarqube
 Sonarqube ja ve configurat en la AMI utilitzada.
-* Configura una IP elastica a AWS que apunti aquesta instancia d'aquesta manera quan s¡integri a Azure Devops no perdràs la comunicació amb el servidor en cas de que reiinici.
+* Configura una IP elastica a AWS que apunti aquesta instancia d'aquesta manera quan s'integri a Azure Devops no perdràs la comunicació amb el servidor en cas de que reiinici.
 * Ja pots entrar a Sonarqube a partir de http://ip-publica-servidor-aws-sonarqube
 
 ## Azure Devops
@@ -51,20 +52,20 @@ Has de crear un usuari aqui: https://dev.azure.com
 * Crear un nou projecte
 
 * A Azure Devops hi ha el repositori tfgUoc.git. El codi font es pot trobar aquí:  [`CODI FONT`](./codi-prova)
-* Per clonar el codi a dins de Azure Devops Repos [![Azure Devops](https://img.shields.io/badge/-Azure%20Devops-grey?style=flat-square&logo=azuredevops)](https://dev.azure.com/) pots clonar amb aquest enllaç https://github.com/keys4dev/tfgUoc.git
+* Per clonar el codi a dins de Azure Devops Repos [![Azure Devops](https://img.shields.io/badge/-Azure%20Devops-grey?style=flat-square&logo=azuredevops)](https://dev.azure.com/) pots clonar amb enllaç https://github.com/keys4dev/tfgUoc.git
 * Per clonar al teu ordinador local necessites instal·lar git [![Git](https://img.shields.io/badge/-git-grey?style=flat-square&logo=git)](https://git-scm.com/) , , després el pots clonar amb la comanda:
 ```bash
 git clone https://github.com/keys4dev/tfgUoc.git
 ```
-* Pots importar la pipeline de compilació d'aquest fitxer.  
+
 * Per afegir els servidors web com a targets un cop els tinguis desplegats amb Terraform has d'anar a Pipelines->Deployment Groups -> Crear un nou deployment group -> Afegir un nou target -> Copiar el script que apareix i executarlo al servidor web.
 Mes informació aqui: https://learn.microsoft.com/en-us/azure/devops/pipelines/release/deployment-groups/?view=azure-devops. 
 
-* Importar la pipeline de compilació d'aquest fitxer dins de Azure Pipelines.  
+* Importa la pipeline de compilació d'aquest [fitxer](./azure-devops/build-ASP.NET.yml).  
 
 * Eecutala per tal de prova si el codi es compila.  
 
-* Finalment per desplegar el codi has d'anar a Pipelines -> Releases -> i sobre el botó new pots importar aquest fitxer josn.  
+* Finalment per desplegar el codi has d'anar a Pipelines -> Releases -> i sobre el botó new pots importar aquest [fitxer](./azure-devops/AWS-CD.json) josn.  
 
 * Es posible que s'hagi de configurar algún parametre per que funcioni.  
 
@@ -126,7 +127,7 @@ Et demanarà crear unes credencials d'accés.
 
 ves a http://ip-publica-servidor-aws-grafana:3000/datasources i configura la connexió amb prometheus.
 
-Pots importar el dashboard d'aquest fitxer aqui: http://ip-publica-servidor-aws-grafana:3000/dashboard/import
+Pots importar el dashboard d'aquest [fitxer](./grafana/Windows Exporter Dashboard-1674486909768.json) aqui: http://ip-publica-servidor-aws-grafana:3000/dashboard/import
 
 
 ## Webservers PROD DEV desplegats amb Terraform
