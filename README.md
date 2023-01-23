@@ -35,10 +35,10 @@ Primer s'ha de creaar una instancia manualment a partir de la AMI ->
 Instal·la el següent:
 
 * Executa aquest [script](./Web-Servers-Requisites/ConfigureRemotingForAnsible.ps1) per configurar els protocolos WinRM dins del servidor. (Aixó garanteix que ansible pughi connectar a la maquina).
-* Executa aquest [script](./Web-Servers-Requisites/create_user_ansible.ps1). per crear l'usuari Ansible dins del servidor. Et demanará una password. Recorda que després la has de configurar en aquest fitxer de configuració d'Ansible. 
-Un cop tot instal·lat crea una AMI a partir de la Instancia. El nom que et generi aquesta nova AMI l'has de configurar en aquest fitxer de terraform.
+* Executa aquest [script](./Web-Servers-Requisites/create_user_ansible.ps1). per crear l'usuari Ansible dins del servidor. Et demanará una password. 
+* Un cop tot instal·lat crea una AMI a partir de la Instancia. El nom que et generi aquesta nova AMI l'has de configurar en aquest fitxer de terraform.
 
-Posteriorment ja es pot eliminar la instacia per posteriorment crear les instancies quan es necessitin en amb Terraform.  
+Posteriorment ja es pot eliminar la instacia per posteriorment crear les instancies quan es necessitin en amb Terraform.
 
 ## Sonarqube
 Sonarqube ja ve configurat en la AMI utilitzada.
@@ -129,6 +129,8 @@ ves a http://ip-publica-servidor-aws-grafana:3000/datasources i configura la con
 Pots importar el dashboard d'aquest fitxer aqui: http://ip-publica-servidor-aws-grafana:3000/dashboard/import
 
 
+## Webservers PROD DEV desplegats amb Terraform
 
+Recorda que després de crear els nous servidors amb terraform has de configurar en aquest [fitxer](./ansible/hosts) de configuració d'Ansible i canviar les ips de les linees 14 i 17 per les noves ips dels teus web servers.
 
 
