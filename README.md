@@ -38,7 +38,7 @@ Grafana            172.31.36.121
 git clone https://github.com/keys4dev/tfgUoc.git
 ```
 ## Terraform
-Dins de la instancia ansible-terraform instal·la ansible amb aquestes comandes:
+Dins de la instancia ansible-terraform instal·la Terraform amb aquestes comandes:
 
 ```bash
 sudo apt-add-repository "deb [arch=$(dpkg --print-architecture)] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
@@ -56,6 +56,14 @@ terraform apply
 ```
 
 ## Ansible
+Dins de la instancia ansible-terraform instal·la ansible amb aquestes comandes:
+
+```bash
+sudo apt-add-repository ppa:ansible/ansible
+sudo apt update
+sudo apt install ansible
+```
+
 Copia la carpeta ansible dins del servidor Ansible
 ```bash
 cd ansible
