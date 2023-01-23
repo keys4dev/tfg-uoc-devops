@@ -67,5 +67,8 @@ Sonarqube ja ve configurat en la AMI utilitzada.
 Sonarqube ja ve configurat en la AMI utilitzada.
 
 ##Servidors Web
-Requereixen tenir instal·lat Windows Exporter
+Per la configuració dels servidors Web.
+Primer s'ha creat una instancia manualment i s'ha instal·lat Windows Exporter.
+S'ha creat una AMI privada partir de la instancia.
+Posteriorment ja es pot eliminar la instacia per posteriorment crear les instancies quan es necessitin en amb Terrafor.
 
