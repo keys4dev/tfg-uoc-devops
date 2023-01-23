@@ -51,7 +51,7 @@ Has de crear un usuari aqui: https://dev.azure.com
 ```bash
 git clone https://github.com/keys4dev/tfgUoc.git
 ```
-Pots importar la pipeline de compilació d'aquest fitxer.
+Pots importar la pipeline de compilació d'aquest fitxer.  
 *Per afegir els servidors web com a targets un cop els tinguis desplegats amb Terraform has d'anar a Pipelines->Deployment Groups -> Crear un nou deployment group -> Afegir un nou target -> Copiar el script que apareix i executarlo al servidor web.
 Mes informació aqui: https://learn.microsoft.com/en-us/azure/devops/pipelines/release/deployment-groups/?view=azure-devops
 ## Terraform
