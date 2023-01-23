@@ -51,17 +51,17 @@ Has de crear un usuari aqui: https://dev.azure.com
 ```bash
 git clone https://github.com/keys4dev/tfgUoc.git
 ```
-Pots importar la pipeline de compilació d'aquest fitxer.  
-*Per afegir els servidors web com a targets un cop els tinguis desplegats amb Terraform has d'anar a Pipelines->Deployment Groups -> Crear un nou deployment group -> Afegir un nou target -> Copiar el script que apareix i executarlo al servidor web.
+* Pots importar la pipeline de compilació d'aquest fitxer.  
+* Per afegir els servidors web com a targets un cop els tinguis desplegats amb Terraform has d'anar a Pipelines->Deployment Groups -> Crear un nou deployment group -> Afegir un nou target -> Copiar el script que apareix i executarlo al servidor web.
 Mes informació aqui: https://learn.microsoft.com/en-us/azure/devops/pipelines/release/deployment-groups/?view=azure-devops. 
 
-Pots importar la pipeline de compilació d'aquest fitxer dins de Azure Pipelines.  
+* Importar la pipeline de compilació d'aquest fitxer dins de Azure Pipelines.  
 
-I executarla per tal de prova si el codi es compila.  
+* Eecutala per tal de prova si el codi es compila.  
 
-Finalment per desplegar el codi has d'anar a Pipelines -> Releases -> i sobre el botó new pots importar aquest fitxer josn.  
+* Finalment per desplegar el codi has d'anar a Pipelines -> Releases -> i sobre el botó new pots importar aquest fitxer josn.  
 
-Es posible que s'hagi de configurar algún parametre per que funcioni.  
+* Es posible que s'hagi de configurar algún parametre per que funcioni.  
 
 ## Terraform
 Dins de la instancia ansible-terraform instal·la Terraform amb aquestes comandes:
