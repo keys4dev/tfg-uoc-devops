@@ -40,6 +40,11 @@ Un cop tot instal·lat crea una AMI a partir de la Instancia. El nom que et gene
 
 Posteriorment ja es pot eliminar la instacia per posteriorment crear les instancies quan es necessitin en amb Terraform.  
 
+## Sonarqube
+Sonarqube ja ve configurat en la AMI utilitzada.
+* Configura una IP elastica a AWS que apunti aquesta instancia d'aquesta manera quan s¡integri a Azure Devops no perdràs la comunicació amb el servidor en cas de que reiinici.
+* Ja pots entrar a Sonarqube a partir de http://ip-publica-servidor-aws-sonarqube
+
 ## Azure Devops
 
 Has de crear un usuari aqui: https://dev.azure.com
@@ -97,10 +102,6 @@ ansible-playbook setup_servers.yml
 sudo nano Install_Hosting_Bundle.yml
 ```
 
-## Sonarqube
-Sonarqube ja ve configurat en la AMI utilitzada.
-* Configura una IP elastica a AWS que apunti aquesta instancia d'aquesta manera quan s¡integri a Azure Devops no perdràs la comunicació amb el servidor en cas de que reiinici.
-* Ja pots entrar a Sonarqube a partir de http://ip-publica-servidor-aws-sonarqube
 
 ## Grafana
 Instal·la grafana amb aquestes comandes:
