@@ -34,8 +34,8 @@ Per la configuració dels servidors Web.
 Primer s'ha de creaar una instancia manualment a partir de la AMI ->
 Instal·la el següent:
 
-* Executa aquest script per configurar els protocolos WinRM dins del servidor. (Aixó garanteix que ansible pughi connectar a la maquina).
-* Executa aquest script per crear l'usuari Ansible dins del servidor. Et demanará una password. Recorda que després la has de configurar en aquest fitxer de configuració d'Ansible. 
+* Executa aquest [script](./Web-Servers-Requisites/ConfigureRemotingForAnsible.ps1) per configurar els protocolos WinRM dins del servidor. (Aixó garanteix que ansible pughi connectar a la maquina).
+* Executa aquest [script](./Web-Servers-Requisites/create_user_ansible.ps1). per crear l'usuari Ansible dins del servidor. Et demanará una password. Recorda que després la has de configurar en aquest fitxer de configuració d'Ansible. 
 Un cop tot instal·lat crea una AMI a partir de la Instancia. El nom que et generi aquesta nova AMI l'has de configurar en aquest fitxer de terraform.
 
 Posteriorment ja es pot eliminar la instacia per posteriorment crear les instancies quan es necessitin en amb Terraform.  
