@@ -32,8 +32,11 @@
 git clone https://github.com/keys4dev/tfgUoc.git
 ```
 ## Terraform
+Copia la carpeta terraform dins del servidor ansible-terraform.
+cd terraform
 
 ```bash
+cd terraform
 terraform init
 terraform commit
 terraform plan
@@ -41,7 +44,9 @@ terraform apply
 ```
 
 ## Ansible
+Copia la carpeta ansible dins del servidor Ansible
 ```bash
+cd ansible
 ansible-playbook setup_servers.yml
 sudo nano Install_Hosting_Bundle.yml
 ```
