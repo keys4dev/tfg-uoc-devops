@@ -50,7 +50,7 @@ Sonarqube ja ve configurat en la AMI utilitzada.
 
 Has de crear un usuari aqui: https://dev.azure.com
 * Crear un nou projecte
-*Connecta sonarqube amb Azure Devops a Project settings->Service Connection -> New Service Connection.
+* Connecta sonarqube amb Azure Devops a Project settings->Service Connection -> New Service Connection.
 * A Azure Devops hi ha el repositori tfgUoc.git. El codi font es pot trobar aquí:  [`CODI FONT`](./codi-prova)
 * Per clonar el codi a dins de Azure Devops Repos [![Azure Devops](https://img.shields.io/badge/-Azure%20Devops-grey?style=flat-square&logo=azuredevops)](https://dev.azure.com/) pots clonar amb enllaç https://github.com/keys4dev/tfgUoc.git
 * Per clonar al teu ordinador local necessites instal·lar git [![Git](https://img.shields.io/badge/-git-grey?style=flat-square&logo=git)](https://git-scm.com/) , , després el pots clonar amb la comanda:
