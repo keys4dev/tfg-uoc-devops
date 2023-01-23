@@ -66,3 +66,6 @@ Sonarqube ja ve configurat en la AMI utilitzada.
 ## Prometheus
 Sonarqube ja ve configurat en la AMI utilitzada.
 
+##Servidors Web
+Requereixen tenir instal·lat Windows Exporter
+
