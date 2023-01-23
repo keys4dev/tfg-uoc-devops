@@ -1,4 +1,4 @@
-![https://github.com/keys4dev/tfg-uoc-devops/blob/main/assets/banner.jpg?raw=true](./assets/banner.jpg)
+![https://github.com/keys4dev/tfg-uoc-devops/blob/main/assets/banner.jpg?raw=true]
 
 [![Amazon Aws](https://img.shields.io/badge/-Amazon%20Aws-grey?style=flat-square&logo=amazonaws)](https://aws.amazon.com/)
 [![Terraform](https://img.shields.io/badge/-Terraform-grey?style=flat-square&logo=terraform)](https://www.terraform.io/) 
@@ -12,6 +12,8 @@
 
 
 # Treball Fi de Grau UOC - Metodologia Devops
+![https://github.com/keys4dev/tfg-uoc-devops/blob/main/assets/flow.png?raw=true](./assets/flow.png)
+
 ## Repositori del projecte de fi de grau Metodologia Devops
  * Aquí trobaràs tot el necessari per reproduir l'entorn del treball
 
