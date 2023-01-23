@@ -46,7 +46,6 @@ sudo apt update && sudo apt install terraform
 ```
 
 Copia la carpeta terraform dins del servidor ansible-terraform.
-cd terraform
 
 ```bash
 cd terraform
