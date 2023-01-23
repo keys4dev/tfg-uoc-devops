@@ -51,4 +51,12 @@ ansible-playbook setup_servers.yml
 sudo nano Install_Hosting_Bundle.yml
 ```
 
+## Sonarqube
+Sonarqube ja ve configurat en la AMI utilitzada.
+
+## Grafana
+Sonarqube ja ve configurat en la AMI utilitzada.
+
+## Prometheus
+Sonarqube ja ve configurat en la AMI utilitzada.
 
