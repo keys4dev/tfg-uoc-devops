@@ -87,6 +87,10 @@ terraform plan
 terraform apply
 ```
 
+## Webservers PROD DEV desplegats amb Terraform
+
+Recorda que després de crear els nous servidors amb terraform has de configurar en aquest [fitxer](./ansible/hosts) de configuració d'Ansible i canviar les ips de les linees 14 i 17 per les noves ips dels teus web servers.
+
 ## Ansible
 Dins de la instancia ansible-terraform instal·la ansible amb aquestes comandes:
 
@@ -130,8 +134,6 @@ ves a http://ip-publica-servidor-aws-grafana:3000/datasources i configura la con
 Pots importar el dashboard d'aquest [fitxer](./grafana/Windows Exporter Dashboard-1674486909768.json) aqui: http://ip-publica-servidor-aws-grafana:3000/dashboard/import
 
 
-## Webservers PROD DEV desplegats amb Terraform
 
-Recorda que després de crear els nous servidors amb terraform has de configurar en aquest [fitxer](./ansible/hosts) de configuració d'Ansible i canviar les ips de les linees 14 i 17 per les noves ips dels teus web servers.
 
 
