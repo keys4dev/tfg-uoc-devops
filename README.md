@@ -15,7 +15,7 @@
 ## Repositori del projecte de fi de grau Metodologia Devops
  * Aquí trobaràs tot el necessari per reproduir l'entorn del treball
 
-## AWS
+### AWS
 
  La infraestructura amb les eines de gestio de la metodologia DevOps es la seguent:
  * 1 Instancia amb Ansible i Terraform a partir de la AMI -> ubuntu/images/hvm-ssd/ubuntu-bionic-18.04-amd64-server-20221201. 
