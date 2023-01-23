@@ -110,6 +110,9 @@ sudo apt update
 sudo apt -y install grafana
 sudo systemctl enable --now grafana-server
 ```
+Ara ja pots accedir a grafana per la url: http://ip-publica-servidor-aws-grafana:3000
+
+Et demanarà crear unes credencials d'accés
 
 ## Prometheus
 Instal·la Prometheus amb aquestes comandes:
