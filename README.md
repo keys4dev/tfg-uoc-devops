@@ -24,10 +24,10 @@
  * 1 Instancia amb Grafana a partir de la AMI -> ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-20221201
 
 ## IPs de Xarxa per Maquina
-Ansible-Terraform  172.31.41.229
-Sonarqube          172.31.42.145
-Prometheus         172.31.46.105
-Grafana            172.31.36.121
+Ansible-Terraform  172.31.41.229. 
+Sonarqube          172.31.42.145. 
+Prometheus         172.31.46.105. 
+Grafana            172.31.36.121. 
 
 ## Configuració d'una AMI personalitzada per després desplegar-les amb Terraform
 Per la configuració dels servidors Web.    
