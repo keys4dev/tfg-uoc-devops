@@ -35,7 +35,7 @@ Primer s'ha de creaar una instancia manualment a partir de la AMI ->
 Instal·la el següent:
 
 * Executa aquest [script](./Web-Servers-Requisites/ConfigureRemotingForAnsible.ps1) per configurar els protocolos WinRM dins del servidor. (Aixó garanteix que ansible pughi connectar a la maquina).
-* Executa aquest [script](./Web-Servers-Requisites/create_user_ansible.ps1). per crear l'usuari Ansible dins del servidor. Et demanará una password.La password que configuris la has de posar en la linea 24 d'aquest fitxer[./ansible/hosts].
+* Executa aquest [script](./Web-Servers-Requisites/create_user_ansible.ps1). per crear l'usuari Ansible dins del servidor. Et demanará una password.La password que configuris la has de posar en la linea 24 d'aquest [fitxer](./ansible/hosts).
 * Instala aquest [programa](.//Web-Servers-Requisites/windows_exporter-0.16.0-amd64.msi) per que exporti les metriques a Prometheus. 
 * Un cop tot instal·lat crea una AMI a partir de la Instancia. El nom que et generi aquesta nova AMI l'has de configurar en aquest fitxer de terraform.
 
