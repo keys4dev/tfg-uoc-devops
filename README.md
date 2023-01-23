@@ -48,6 +48,8 @@ Posteriorment ja es pot eliminar la instacia per posteriorment crear les instanc
 ```bash
 git clone https://github.com/keys4dev/tfgUoc.git
 ```
+Pots importar la pipeline de compilació d'aquest fitxer.
+
 ## Terraform
 Dins de la instancia ansible-terraform instal·la Terraform amb aquestes comandes:
 
