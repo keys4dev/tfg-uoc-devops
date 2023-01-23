@@ -65,7 +65,7 @@ localhost ansible_connection=local
 
 [win-servers:vars]
 ansible_user=ansible
-ansible_password=41581T@g
+ansible_password=ansible_windows_server_password
 ansible_port=5986
 ansible_connection=winrm
 ansible_winrm_transport=basic
