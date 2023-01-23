@@ -18,10 +18,10 @@
 ## AWS
 
  La infraestructura amb les eines de gestio de la metodologia DevOps es la seguent:
- * 1 Instancia amb Ansible i Terraform
- * 1 Instancia amb Sonarqube
- * 1 Instancia amb Prometheus
- * 1 Instancia amb Grafana
+ * 1 Instancia amb Ansible i Terraform a partir de la AMI -> ubuntu/images/hvm-ssd/ubuntu-bionic-18.04-amd64-server-20221201
+ * 1 Instancia amb Sonarqube a partir de la AMI -> bitnami-sonarqube-9.3.0-15-r01-linux-debian-10-x86_64-hvm-ebs-nami
+ * 1 Instancia amb Prometheus a partir de la AMI -> ubuntu/images/hvm-ssd/ubuntu-bionic-18.04-amd64-server-20221201
+ * 1 Instancia amb Grafana a partir de la AMI -> ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-20221201
 
 ## Azure Devops
 
