@@ -102,18 +102,6 @@ ansible-playbook setup_servers.yml
 sudo nano Install_Hosting_Bundle.yml
 ```
 
-
-## Grafana
-Instal·la grafana amb aquestes comandes:
-```bash
-sudo apt update
-sudo apt -y install grafana
-sudo systemctl enable --now grafana-server
-```
-Ara ja pots accedir a grafana per la url: http://ip-publica-servidor-aws-grafana:3000
-
-Et demanarà crear unes credencials d'accés
-
 ## Prometheus
 Instal·la Prometheus amb aquestes comandes:
 ```bash
@@ -124,6 +112,23 @@ sudo systemctl start prometheus
 sudo systemctl enable prometheus
 ```
 * Ara ja pots accedir a prometheus per la url: http://ip-publica-servidor-aws-prometheus:9090 i afegir els servidors web desplegats.
+
+## Grafana
+Instal·la grafana amb aquestes comandes:
+```bash
+sudo apt update
+sudo apt -y install grafana
+sudo systemctl enable --now grafana-server
+```
+Ara ja pots accedir a grafana per la url: http://ip-publica-servidor-aws-grafana:3000
+
+Et demanarà crear unes credencials d'accés.
+
+ves a http://ip-publica-servidor-aws-grafana:3000/datasources i configura la connexió amb prometheus.
+
+Pots importar el dashboard d'aquest fitxer aqui: http://ip-publica-servidor-aws-grafana:3000/dashboard/import
+
+
 
 
 
