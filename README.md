@@ -1,4 +1,4 @@
-![https://github.com/keys4dev/tfg-uoc-devops/blob/main/assets/banner.jpg?raw=true]
+
 
 [![Amazon Aws](https://img.shields.io/badge/-Amazon%20Aws-grey?style=flat-square&logo=amazonaws)](https://aws.amazon.com/)
 [![Terraform](https://img.shields.io/badge/-Terraform-grey?style=flat-square&logo=terraform)](https://www.terraform.io/) 
